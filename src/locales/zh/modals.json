@@ -1,0 +1,106 @@
+{
+  "binaural": {
+    "description": "双耳节拍是通过在左右耳播放略有不同频率的声音而产生的听觉幻象。它可以促进放松、专注和冥想。",
+    "frequencies": {
+      "alpha": "α 波（8-13 Hz） - 放松",
+      "beta": "β 波（14-30 Hz） - 专注",
+      "delta": "δ 波（0.5-4 Hz） - 深度睡眠",
+      "gamma": "γ 波（30-100 Hz） - 认知",
+      "theta": "θ 波（4-8 Hz） - 冥想"
+    },
+    "title": "双耳节拍",
+    "useHeadphones": "为获得最佳效果，请使用耳机"
+  },
+  "breathing": {
+    "boxBreathing": "方形呼吸法",
+    "deepBreathing": "深呼吸",
+    "description": "呼吸练习有助于减轻压力，促进放松。",
+    "exhale": "呼气",
+    "hold": "屏息",
+    "inhale": "吸气",
+    "start": "开始练习",
+    "title": "呼吸练习"
+  },
+  "countdown": {
+    "hours": "小时",
+    "minutes": "分钟",
+    "seconds": "秒",
+    "start": "开始倒计时",
+    "stop": "停止倒计时",
+    "title": "倒计时"
+  },
+  "donate": {
+    "description": "心弦 是免费开源的。如果您喜欢使用它，请考虑支持我们的开发。",
+    "title": "支持 心弦"
+  },
+  "lofi": {
+    "description": "在使用 心弦 时，享受轻松的 Lo-Fi 嘻哈音乐电台。",
+    "playing": "正在播放",
+    "title": "Lo-Fi 电台"
+  },
+  "notepad": {
+    "placeholder": "开始输入您的笔记...",
+    "title": "记事本"
+  },
+  "pomodoro": {
+    "breakTime": "休息时间",
+    "longBreak": "长休息（分钟）",
+    "pause": "暂停",
+    "reset": "重置",
+    "settings": "设置",
+    "shortBreak": "短休息（分钟）",
+    "start": "开始",
+    "title": "番茄钟",
+    "workTime": "工作时间（分钟）"
+  },
+  "presets": {
+    "create": "创建预设",
+    "delete": "删除预设",
+    "empty": "暂无预设方案",
+    "load": "加载预设",
+    "name": "预设名称",
+    "nameRequired": "请输入预设名称",
+    "save": "保存当前声音",
+    "title": "声音预设"
+  },
+  "share": {
+    "copied": "链接已复制到剪贴板！",
+    "copy": "复制链接",
+    "description": "与他人分享您当前的声音组合",
+    "title": "分享声音"
+  },
+  "shortcuts": {
+    "binauralBeats": "双耳节拍",
+    "breathingExercise": "呼吸练习",
+    "countdownTimer": "倒计时",
+    "keyboardShortcuts": "键盘快捷键",
+    "muteAll": "全部静音",
+    "notepad": "记事本",
+    "pomodoro": "番茄钟",
+    "presets": "预设方案",
+    "shareSounds": "分享声音",
+    "shortcutsList": "快捷键列表",
+    "shuffle": "随机播放",
+    "sleepTimer": "睡眠定时器",
+    "title": "键盘快捷键",
+    "todoChecklist": "待办清单",
+    "togglePlay": "切换播放"
+  },
+  "sleepTimer": {
+    "customTime": "自定义时间",
+    "fadeOut": "停止前淡出声音",
+    "minutes": "{{count}} 分钟",
+    "minutes_other": "{{count}} 分钟",
+    "set": "设置定时器",
+    "stop": "停止定时器",
+    "title": "睡眠定时器"
+  },
+  "todo": {
+    "addTask": "添加任务",
+    "completed": "已完成",
+    "empty": "暂无任务",
+    "pending": "待处理",
+    "placeholder": "您需要做什么？",
+    "title": "待办清单"
+  }
+}

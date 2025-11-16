@@ -1,11 +1,20 @@
 ---
 import { Container } from './container';
+import { getTranslator } from '@/lib/i18n-init';
+
+interface Props {
+  locale?: string;
+}
+
+const locale = Astro.props.locale || 'en';
+const t = getTranslator(locale, 'seo');
 ---
 
 <footer class="footer">
   <Container>
     <p>
-      Created by <a href="https://twitter.com/remvze">Maze ✦</a>
+      {t('footer.madeBy')}
+      <a href="https://topzeal.com">Topzeal</a>
     </p>
   </Container>
 </footer>

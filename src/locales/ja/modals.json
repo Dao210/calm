@@ -1,0 +1,106 @@
+{
+  "binaural": {
+    "description": "Binaural beats are auditory illusions created when two slightly different frequencies are played in each ear. They can promote relaxation, focus, and meditation.",
+    "frequencies": {
+      "alpha": "Alpha Waves (8-13 Hz) - Relaxation",
+      "beta": "Beta Waves (14-30 Hz) - Focus",
+      "delta": "Delta Waves (0.5-4 Hz) - Deep Sleep",
+      "gamma": "Gamma Waves (30-100 Hz) - Cognition",
+      "theta": "Theta Waves (4-8 Hz) - Meditation"
+    },
+    "title": "Binaural Beats",
+    "useHeadphones": "For best results, use headphones"
+  },
+  "breathing": {
+    "boxBreathing": "Box Breathing",
+    "deepBreathing": "Deep Breathing",
+    "description": "Breathing exercises help reduce stress and promote relaxation.",
+    "exhale": "Exhale",
+    "hold": "Hold",
+    "inhale": "Inhale",
+    "start": "Start Exercise",
+    "title": "Breathing Exercise"
+  },
+  "countdown": {
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds",
+    "start": "Start Countdown",
+    "stop": "Stop Countdown",
+    "title": "Countdown Timer"
+  },
+  "donate": {
+    "description": "Heartstrings is free and open-source. If you enjoy using it, consider supporting its development.",
+    "title": "Support Heartstrings"
+  },
+  "lofi": {
+    "description": "Enjoy relaxing Lo-Fi hip-hop radio while using Heartstrings.",
+    "playing": "Now Playing",
+    "title": "Lo-Fi Radio"
+  },
+  "notepad": {
+    "placeholder": "Start typing your notes...",
+    "title": "Notepad"
+  },
+  "pomodoro": {
+    "breakTime": "Break Time",
+    "longBreak": "Long Break (minutes)",
+    "pause": "Pause",
+    "reset": "Reset",
+    "settings": "Settings",
+    "shortBreak": "Short Break (minutes)",
+    "start": "Start",
+    "title": "Pomodoro Timer",
+    "workTime": "Work Time (minutes)"
+  },
+  "presets": {
+    "create": "Create Preset",
+    "delete": "Delete Preset",
+    "empty": "No presets created yet",
+    "load": "Load Preset",
+    "name": "Preset Name",
+    "nameRequired": "Please enter a preset name",
+    "save": "Save Current Sounds",
+    "title": "Sound Presets"
+  },
+  "share": {
+    "copied": "Link copied to clipboard!",
+    "copy": "Copy Link",
+    "description": "Share your current sound mix with others",
+    "title": "Share Sounds"
+  },
+  "shortcuts": {
+    "binauralBeats": "Binaural Beats",
+    "breathingExercise": "Breathing Exercise",
+    "countdownTimer": "Countdown Timer",
+    "keyboardShortcuts": "Keyboard Shortcuts",
+    "muteAll": "Mute All",
+    "notepad": "Notepad",
+    "pomodoro": "Pomodoro",
+    "presets": "Presets",
+    "shareSounds": "Share Sounds",
+    "shortcutsList": "Shortcuts List",
+    "shuffle": "Shuffle",
+    "sleepTimer": "Sleep Timer",
+    "title": "Keyboard Shortcuts",
+    "todoChecklist": "Todo Checklist",
+    "togglePlay": "Toggle Play"
+  },
+  "sleepTimer": {
+    "customTime": "Custom Time",
+    "fadeOut": "Fade out sounds before stopping",
+    "minutes": "{{count}} minute",
+    "minutes_other": "{{count}} minutes",
+    "set": "Set Timer",
+    "stop": "Stop Timer",
+    "title": "Sleep Timer"
+  },
+  "todo": {
+    "addTask": "Add a task",
+    "completed": "Completed",
+    "empty": "No tasks yet",
+    "pending": "Pending",
+    "placeholder": "What do you need to do?",
+    "title": "Todo Checklist"
+  }
+}

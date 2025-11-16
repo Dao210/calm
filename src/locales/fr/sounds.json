@@ -1,0 +1,29 @@
+{
+  "categories": {
+    "all": "All",
+    "animals": "Animals",
+    "binaural": "Binaural",
+    "favorites": "Favorites",
+    "nature": "Nature",
+    "noise": "Noise",
+    "places": "Places",
+    "rain": "Rain",
+    "things": "Things",
+    "transport": "Transport",
+    "urban": "Urban"
+  },
+  "controls": {
+    "pause": "Pause",
+    "play": "Play",
+    "togglePlay": "Toggle Play",
+    "volume": "Volume"
+  },
+  "favorites": {
+    "add": "Add to favorites",
+    "empty": "No favorite sounds yet",
+    "remove": "Remove from favorites"
+  },
+  "globalVolume": "Global Volume",
+  "noSounds": "No sounds available",
+  "searchPlaceholder": "Search sounds..."
+}

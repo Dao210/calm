@@ -1,5 +1,5 @@
 {
-  "name": "moodist",
+  "name": "xinxian-art",
   "type": "module",
   "version": "2.1.0",
   "scripts": {
@@ -36,19 +36,24 @@
     "@types/react-dom": "^18.2.10",
     "@vite-pwa/astro": "0.5.0",
     "astro": "4.10.3",
+    "astro-i18next": "1.0.0-beta.21",
     "deepmerge": "4.3.1",
     "focus-trap-react": "10.2.3",
     "framer-motion": "10.16.4",
     "howler": "2.2.4",
+    "i18next": "25.6.2",
+    "i18next-fs-backend": "2.6.1",
     "js-confetti": "0.12.0",
     "motion": "12.23.24",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hotkeys-hook": "3.2.1",
+    "react-i18next": "16.3.3",
     "react-icons": "4.11.0",
     "react-wrap-balancer": "1.1.0",
     "react-youtube": "10.1.0",
     "uuid": "10.0.0",
+    "workbox-window": "7.3.0",
     "zustand": "4.4.3"
   },
   "devDependencies": {
@@ -99,5 +104,6 @@
     "stylelint-config-standard": "34.0.0",
     "stylelint-prettier": "4.0.2",
     "vitest": "1.6.0"
-  }
+  },
+  "packageManager": "pnpm@9.12.3+sha512.cce0f9de9c5a7c95bef944169cc5dfe8741abfb145078c0d508b868056848a87c81e626246cb60967cbd7fd29a6c062ef73ff840d96b3c86c40ac92cf4a813ee"
 }

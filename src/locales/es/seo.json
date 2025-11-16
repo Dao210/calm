@@ -1,0 +1,30 @@
+{
+  "about": {
+    "paragraph1": {
+      "body": "¿Anhelas un escape relajante de la rutina diaria? ¿Necesitas el paisaje sonoro perfecto para aumentar tu concentración o sumirte en un sueño pacífico? No busques más allá de Heartstrings, tu generador de sonido ambiental gratuito y de código abierto. Olvídate de suscripciones y registros: con Heartstrings, desbloqueas un mundo de experiencias de audio relajantes e inmersivas, completamente gratis.",
+      "title": "Sonidos Ambientales Gratuitos"
+    },
+    "paragraph2": {
+      "body": "Sumérgete en una amplia biblioteca de {{count}} sonidos cuidadosamente seleccionados. Los amantes de la naturaleza encontrarán consuelo en el suave murmullo de los arroyos, el rítmico choque de las olas o el cálido crepitar de una fogata. Los paisajes urbanos cobran vida con el suave zumbido de los cafés, el rítmico traqueteo de los trenes o el relajante ruido blanco del tráfico. Y para aquellos que buscan mayor concentración o relajación, Heartstrings ofrece ritmos binaurales y ruido de color diseñados para mejorar tu estado mental.",
+      "title": "Sonidos Cuidadosamente Seleccionados"
+    },
+    "paragraph3": {
+      "body": "La belleza de Heartstrings radica en su simplicidad y personalización. Sin menús complejos ni opciones confusas: solo elige los sonidos deseados, ajusta el balance de volumen y dale play. ¿Quieres mezclar el suave canto de los pájaros con el relajante sonido de la lluvia? ¡No hay problema! Superpone tantos sonidos como desees para crear tu oasis de paisaje sonoro personalizado.",
+      "title": "Crea Tu Paisaje Sonoro"
+    },
+    "paragraph4": {
+      "body": "Ya sea que busques relajarte después de un largo día, mejorar tu concentración durante el trabajo o sumirte en un sueño pacífico, Heartstrings tiene el paisaje sonoro perfecto esperándote. ¿La mejor parte? Es completamente gratuito y de código abierto, para que puedas disfrutar de sus beneficios sin compromisos. ¡Comienza a usar Heartstrings hoy y descubre tu nuevo refugio de tranquilidad y concentración!",
+      "title": "Sonidos para Cada Momento"
+    },
+    "useHeartstrings": "Usar Heartstrings"
+  },
+  "footer": {
+    "builtWith": "Construido con",
+    "madeBy": "Hecho por",
+    "openSource": "Código Abierto"
+  },
+  "meta": {
+    "description": "Heartstrings es un generador de sonido ambiental gratuito y de código abierto que cuenta con {{count}} sonidos cuidadosamente seleccionados. Crea tu atmósfera ideal para relajarte, concentrarte o ser creativo con esta herramienta versátil.",
+    "title": "Heartstrings: Sonidos Ambientales para Concentración y Calma"
+  }
+}

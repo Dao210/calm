@@ -1,0 +1,106 @@
+{
+  "binaural": {
+    "description": "Los ritmos binaurales son ilusiones auditivas creadas cuando se reproducen dos frecuencias ligeramente diferentes en cada oído. Pueden promover la relajación, el enfoque y la meditación.",
+    "frequencies": {
+      "alpha": "Ondas Alfa (8-13 Hz) - Relajación",
+      "beta": "Ondas Beta (14-30 Hz) - Concentración",
+      "delta": "Ondas Delta (0.5-4 Hz) - Sueño Profundo",
+      "gamma": "Ondas Gamma (30-100 Hz) - Cognición",
+      "theta": "Ondas Theta (4-8 Hz) - Meditación"
+    },
+    "title": "Ritmos Binaurales",
+    "useHeadphones": "Para mejores resultados, usa auriculares"
+  },
+  "breathing": {
+    "boxBreathing": "Respiración en Caja",
+    "deepBreathing": "Respiración Profunda",
+    "description": "Los ejercicios de respiración ayudan a reducir el estrés y promover la relajación.",
+    "exhale": "Exhalar",
+    "hold": "Mantener",
+    "inhale": "Inhalar",
+    "start": "Iniciar Ejercicio",
+    "title": "Ejercicio de Respiración"
+  },
+  "countdown": {
+    "hours": "Horas",
+    "minutes": "Minutos",
+    "seconds": "Segundos",
+    "start": "Iniciar Cuenta Regresiva",
+    "stop": "Detener Cuenta Regresiva",
+    "title": "Temporizador de Cuenta Regresiva"
+  },
+  "donate": {
+    "description": "Heartstrings es gratuito y de código abierto. Si disfrutas usándolo, considera apoyar su desarrollo.",
+    "title": "Apoyar Heartstrings"
+  },
+  "lofi": {
+    "description": "Disfruta de una relajante radio de hip-hop Lo-Fi mientras usas Heartstrings.",
+    "playing": "Reproduciendo Ahora",
+    "title": "Radio Lo-Fi"
+  },
+  "notepad": {
+    "placeholder": "Comienza a escribir tus notas...",
+    "title": "Bloc de Notas"
+  },
+  "pomodoro": {
+    "breakTime": "Tiempo de Descanso",
+    "longBreak": "Descanso Largo (minutos)",
+    "pause": "Pausar",
+    "reset": "Reiniciar",
+    "settings": "Configuración",
+    "shortBreak": "Descanso Corto (minutos)",
+    "start": "Iniciar",
+    "title": "Temporizador Pomodoro",
+    "workTime": "Tiempo de Trabajo (minutos)"
+  },
+  "presets": {
+    "create": "Crear Preajuste",
+    "delete": "Eliminar Preajuste",
+    "empty": "Aún no se han creado preajustes",
+    "load": "Cargar Preajuste",
+    "name": "Nombre del Preajuste",
+    "nameRequired": "Por favor ingresa un nombre para el preajuste",
+    "save": "Guardar Sonidos Actuales",
+    "title": "Preajustes de Sonido"
+  },
+  "share": {
+    "copied": "¡Enlace copiado al portapapeles!",
+    "copy": "Copiar Enlace",
+    "description": "Comparte tu mezcla de sonidos actual con otros",
+    "title": "Compartir Sonidos"
+  },
+  "shortcuts": {
+    "binauralBeats": "Ritmos Binaurales",
+    "breathingExercise": "Ejercicio de Respiración",
+    "countdownTimer": "Temporizador de Cuenta Regresiva",
+    "keyboardShortcuts": "Atajos de Teclado",
+    "muteAll": "Silenciar Todo",
+    "notepad": "Bloc de Notas",
+    "pomodoro": "Pomodoro",
+    "presets": "Preajustes",
+    "shareSounds": "Compartir Sonidos",
+    "shortcutsList": "Lista de Atajos",
+    "shuffle": "Aleatorio",
+    "sleepTimer": "Temporizador de Sueño",
+    "title": "Atajos de Teclado",
+    "todoChecklist": "Lista de Tareas",
+    "togglePlay": "Alternar Reproducción"
+  },
+  "sleepTimer": {
+    "customTime": "Tiempo Personalizado",
+    "fadeOut": "Desvanecer sonidos antes de detener",
+    "minutes": "{{count}} minuto",
+    "minutes_other": "{{count}} minutos",
+    "set": "Configurar Temporizador",
+    "stop": "Detener Temporizador",
+    "title": "Temporizador de Sueño"
+  },
+  "todo": {
+    "addTask": "Agregar una tarea",
+    "completed": "Completadas",
+    "empty": "Aún no hay tareas",
+    "pending": "Pendientes",
+    "placeholder": "¿Qué necesitas hacer?",
+    "title": "Lista de Tareas"
+  }
+}

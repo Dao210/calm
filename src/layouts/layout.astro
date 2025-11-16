@@ -1,25 +1,47 @@
 ---
 import { pwaInfo } from 'virtual:pwa-info'; // eslint-disable-line
+import { getTranslator } from '@/lib/i18n-init';
 
 import { Reload } from '@/components/reload';
 
 import { count } from '@/lib/sounds';
+import { getLocaleInfo, locales } from '@/lib/i18n';
 
 import '@/styles/global.css';
 
 interface Props {
+  currentLocale?: string;
   description?: string;
   title?: string;
 }
 
-const title = Astro.props.title || 'Moodist: Ambient Sounds for Focus and Calm';
+const currentLocale = Astro.props.currentLocale || Astro.currentLocale || 'en';
+const localeInfo = getLocaleInfo(currentLocale);
+
+// Get translation function for this locale
+const tSeo = getTranslator(currentLocale, 'seo');
+
+const title = Astro.props.title || tSeo('meta.title', { count: count() });
 const description =
-  Astro.props.description ||
-  `Moodist is a free and open-source ambient sound generator featuring ${count()} carefully curated sounds. Create your ideal atmosphere for relaxation, focus, or creativity with this versatile tool.`;
+  Astro.props.description || tSeo('meta.description', { count: count() });
+
+// Generate hreflang links
+const baseUrl = 'https://xinxian.art';
+const currentPath = Astro.url.pathname.replace(
+  /^\/(en|es|fr|de|it|ar|ja|zh)/,
+  '',
+);
+const hreflangs = locales.map(locale => ({
+  href:
+    locale.code === 'en'
+      ? `${baseUrl}${currentPath || '/'}`
+      : `${baseUrl}/${locale.code}${currentPath || ''}`,
+  hreflang: locale.code,
+}));
 ---
 
 <!doctype html>
-<html lang="en">
+<html dir={localeInfo.dir} lang={currentLocale}>
   <head>
     <meta charset="UTF-8" />
     <meta content="width=device-width" name="viewport" />
@@ -33,12 +55,21 @@ const description =
 
     <meta content={title} property="og:title" />
     <meta content={description} property="og:description" />
-    <meta content="Moodist" property="og:site_name" />
-    <meta content="https://moodist.app" property="og:url" />
+    <meta content="Heartstrings 心弦" property="og:site_name" />
+    <meta content="https://xinxian.art" property="og:url" />
     <meta content="website" property="og:type" />
-    <meta content="https://moodist.app/og.png" property="og:image" />
+    <meta content="https://xinxian.art/og.png" property="og:image" />
 
     <meta content="summary_large_image" name="twitter:card" />
+
+    <!-- Hreflang tags for SEO -->
+    {
+      hreflangs.map(({ href, hreflang }) => (
+        <link href={href} hreflang={hreflang} rel="alternate" />
+      ))
+    }
+    <link href={`${baseUrl}/`} hreflang="x-default" rel="alternate" />
+    <link href={`${baseUrl}${Astro.url.pathname}`} rel="canonical" />
 
     {pwaInfo && <Fragment set:html={pwaInfo.webManifest.linkTag} />}
   </head>

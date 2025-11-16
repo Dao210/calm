@@ -1,0 +1,37 @@
+{
+  "actions": {
+    "cancel": "Cancelar",
+    "clear": "Limpiar",
+    "close": "Cerrar",
+    "confirm": "Confirmar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "save": "Guardar",
+    "share": "Compartir"
+  },
+  "app": {
+    "description": "Heartstrings es un generador de sonido ambiental gratuito y de código abierto que cuenta con {{count}} sonidos cuidadosamente seleccionados. Crea tu atmósfera ideal para relajarte, concentrarte o ser creativo con esta herramienta versátil.",
+    "name": "Heartstrings",
+    "tagline": "Sonidos Ambientales para Concentración y Calma"
+  },
+  "features": {
+    "freeAndOpenSource": "Gratuito y de Código Abierto",
+    "noTracking": "Sin Seguimiento",
+    "offlineSupport": "Soporte Sin Conexión",
+    "soundCount": "{{count}} Sonidos"
+  },
+  "hero": {
+    "description": "Gratuito y de Código Abierto.",
+    "soundsCount": "{{count}} Sonidos",
+    "subtitle": "Para Concentración y Calma",
+    "title": "Sonidos Ambientales"
+  },
+  "time": {
+    "hours": "{{count}} hora",
+    "hours_other": "{{count}} horas",
+    "minutes": "{{count}} minuto",
+    "minutes_other": "{{count}} minutos",
+    "seconds": "{{count}} segundo",
+    "seconds_other": "{{count}} segundos"
+  }
+}

@@ -2,6 +2,7 @@ import { useMemo, useEffect } from 'react';
 import { useShallow } from 'zustand/react/shallow';
 import { BiSolidHeart } from 'react-icons/bi/index';
 import { Howler } from 'howler';
+import { useTranslation } from 'react-i18next';
 
 import { useSoundStore } from '@/stores/sound';
 
@@ -13,6 +14,7 @@ import { SharedModal } from '@/components/modals/shared';
 import { Toolbar } from '@/components/toolbar';
 import { SnackbarProvider } from '@/contexts/snackbar';
 import { MediaControls } from '@/components/media-controls';
+import { I18nProvider } from '@/components/i18n-provider';
 
 import { sounds } from '@/data/sounds';
 import { FADE_OUT } from '@/constants/events';
@@ -20,7 +22,20 @@ import { FADE_OUT } from '@/constants/events';
 import type { Sound } from '@/data/types';
 import { subscribe } from '@/lib/event';
 
-export function App() {
+interface AppProps {
+  locale?: string;
+}
+
+export function App({ locale = 'en' }: AppProps) {
+  return (
+    <I18nProvider locale={locale}>
+      <AppContent />
+    </I18nProvider>
+  );
+}
+
+function AppContent() {
+  const { t } = useTranslation('sounds');
   const categories = useMemo(() => sounds.categories, []);
 
   const favorites = useSoundStore(useShallow(state => state.getFavorites()));
@@ -79,12 +94,12 @@ export function App() {
         icon: <BiSolidHeart />,
         id: 'favorites',
         sounds: favoriteSounds as Array<Sound>,
-        title: 'Favorites',
+        title: t('categories.favorites'),
       });
     }
 
     return [...favorites, ...categories];
-  }, [favoriteSounds, categories]);
+  }, [favoriteSounds, categories, t]);
 
   return (
     <SnackbarProvider>

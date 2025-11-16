@@ -1,5 +1,6 @@
 import { useState, useMemo, useCallback, useRef, useEffect } from 'react';
 import { AnimatePresence, motion } from 'motion/react';
+import { useTranslation } from 'react-i18next';
 
 import { Sound } from './sound';
 import { useLocalStorage } from '@/hooks/use-local-storage';
@@ -17,6 +18,7 @@ interface SoundsProps {
 }
 
 export function Sounds({ functional, id, sounds }: SoundsProps) {
+  const { t } = useTranslation('sounds');
   const [showAll, setShowAll] = useLocalStorage(`${id}-show-more`, false);
   const [clickedMore, setClickedMore] = useState(false);
 
@@ -106,7 +108,7 @@ export function Sounds({ functional, id, sounds }: SoundsProps) {
               onAnimationComplete={() => setIsAnimating(false)}
               onAnimationStart={() => setIsAnimating(true)}
             >
-              {showAll ? 'Show Less' : 'Show More'}
+              {showAll ? t('showLess') : t('showMore')}
             </motion.span>
           </AnimatePresence>
         </button>

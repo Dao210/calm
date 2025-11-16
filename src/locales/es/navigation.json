@@ -1,0 +1,20 @@
+{
+  "items": {
+    "binauralBeats": "Ritmos Binaurales",
+    "breathingExercise": "Ejercicio de Respiración",
+    "countdown": "Temporizador de Cuenta Regresiva",
+    "donate": "Donar",
+    "isochronicTones": "Tonos Isocrónicos",
+    "lofi": "Radio Lo-Fi",
+    "notepad": "Bloc de Notas",
+    "pomodoro": "Pomodoro",
+    "presets": "Preajustes",
+    "share": "Compartir Sonidos",
+    "shortcuts": "Atajos de Teclado",
+    "shuffle": "Sonidos Aleatorios",
+    "sleepTimer": "Temporizador de Sueño",
+    "source": "Código Fuente",
+    "todo": "Lista de Tareas"
+  },
+  "menu": "Menú"
+}

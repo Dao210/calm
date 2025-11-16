@@ -1,3 +1,5 @@
+import { useTranslation } from 'react-i18next';
+
 import { Sounds } from '@/components/sounds';
 
 import styles from './category.module.css';
@@ -15,6 +17,12 @@ export function Category({
   sounds,
   title,
 }: CategoryProps) {
+  const { t } = useTranslation('sounds');
+
+  // Use translation for category title, fallback to provided title
+  const displayTitle =
+    id && id !== 'favorites' ? t(`categories.${id}`, title) : title;
+
   return (
     <div className={styles.category} id={`category-${id}`}>
       <div className={styles.iconContainer}>
@@ -24,7 +32,7 @@ export function Category({
         </div>
       </div>
 
-      <div className={styles.title}>{title}</div>
+      <div className={styles.title}>{displayTitle}</div>
 
       <Sounds functional={functional} id={id} sounds={sounds} />
     </div>

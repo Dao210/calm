@@ -1,0 +1,32 @@
+---
+import { getTranslator } from '@/lib/i18n-init';
+import Layout from '@/layouts/layout.astro';
+
+import Donate from '@/components/donate.astro';
+import Hero from '@/components/hero.astro';
+import About from '@/components/about.astro';
+import Footer from '@/components/footer.astro';
+import { LanguageSwitcher } from '@/components/language-switcher';
+
+import { App } from '@/components/app';
+import { count } from '@/lib/sounds';
+
+const currentLocale = 'zh';
+
+// Get translation function for this locale
+const tSeo = getTranslator(currentLocale, 'seo');
+---
+
+<Layout
+  currentLocale={currentLocale}
+  title={tSeo('meta.title', { count: count() })}
+>
+  <div style="position: fixed; top: 20px; right: 20px; z-index: 1000;">
+    <LanguageSwitcher client:load currentLocale={currentLocale} />
+  </div>
+  <Donate />
+  <Hero locale={currentLocale} />
+  <App client:load locale={currentLocale} />
+  <About locale={currentLocale} />
+  <Footer locale={currentLocale} />
+</Layout>

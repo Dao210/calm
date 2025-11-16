@@ -1,8 +1,8 @@
 <div align="center">
-  <img src="/assets/banner.png" alt="Moodist Logo Banner" />
-  <h2>Moodist 🌲</h2>
+  <img src="/assets/banner.png" alt="Heartstrings Logo Banner" />
+  <h2>Heartstrings 心弦 🌲</h2>
   <p>Ambient sounds for focus and calm.</p>
-  <a href="https://moodist.mvze.net">Visit <strong>Moodist</strong></a> | <a href="https://buymeacoffee.com/remvze">Buy Me a Coffee</a>
+  <a href="https://xinxian.art">Visit <strong>Heartstrings</strong></a> | <a href="https://buymeacoffee.com/remvze">Buy Me a Coffee</a>
 </div>
 
 ## Table of Contents
@@ -11,7 +11,7 @@
 - 🧰 [Tools](#tools)
 - 🔮 [Commands](#commands)
 - 🚧 [Contributing](#contributing)
-- ⭐ [Support](#support-moodist)
+- ⭐ [Support](#support-heartstrings)
 - 📜 [License](#license)
 
 ## Features
@@ -71,11 +71,11 @@
 
 🚧 Please check [CONTRIBUTING.md](CONTRIBUTING.md) file.
 
-## Support Moodist
+## Support Heartstrings
 
 ⭐ Give a star if you liked this project.
 
-☕ [Buy Me a Coffee](https://buymeacoffee.com/remvze) to help me maintain Moodist.
+☕ [Buy Me a Coffee](https://buymeacoffee.com/remvze) to help me maintain Heartstrings.
 
 ## License
 

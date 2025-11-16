@@ -1,0 +1,37 @@
+{
+  "actions": {
+    "cancel": "Cancel",
+    "clear": "Clear",
+    "close": "Close",
+    "confirm": "Confirm",
+    "delete": "Delete",
+    "edit": "Edit",
+    "save": "Save",
+    "share": "Share"
+  },
+  "app": {
+    "description": "Heartstrings is a free and open-source ambient sound generator featuring {{count}} carefully curated sounds. Create your ideal atmosphere for relaxation, focus, or creativity with this versatile tool.",
+    "name": "Heartstrings",
+    "tagline": "Ambient Sounds for Focus and Calm"
+  },
+  "features": {
+    "freeAndOpenSource": "Free and Open-Source",
+    "noTracking": "No Tracking",
+    "offlineSupport": "Offline Support",
+    "soundCount": "{{count}} Sounds"
+  },
+  "hero": {
+    "description": "Free and Open-Source.",
+    "soundsCount": "{{count}} Sounds",
+    "subtitle": "For Focus and Calm",
+    "title": "Ambient Sounds"
+  },
+  "time": {
+    "hours": "{{count}} hour",
+    "hours_other": "{{count}} hours",
+    "minutes": "{{count}} minute",
+    "minutes_other": "{{count}} minutes",
+    "seconds": "{{count}} second",
+    "seconds_other": "{{count}} seconds"
+  }
+}

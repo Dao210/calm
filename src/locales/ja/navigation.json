@@ -1,0 +1,20 @@
+{
+  "items": {
+    "binauralBeats": "Binaural Beats",
+    "breathingExercise": "Breathing Exercise",
+    "countdown": "Countdown Timer",
+    "donate": "Donate",
+    "isochronicTones": "Isochronic Tones",
+    "lofi": "Lo-Fi Radio",
+    "notepad": "Notepad",
+    "pomodoro": "Pomodoro",
+    "presets": "Presets",
+    "share": "Share Sounds",
+    "shortcuts": "Keyboard Shortcuts",
+    "shuffle": "Shuffle Sounds",
+    "sleepTimer": "Sleep Timer",
+    "source": "Source Code",
+    "todo": "Todo Checklist"
+  },
+  "menu": "Menu"
+}

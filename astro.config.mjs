@@ -2,14 +2,17 @@ import { defineConfig } from 'astro/config';
 
 import react from '@astrojs/react';
 import AstroPWA from '@vite-pwa/astro';
+import astroI18next from 'astro-i18next';
 
 export default defineConfig({
   integrations: [
     react(),
+    astroI18next(),
     AstroPWA({
       manifest: {
         background_color: '#09090b',
-        description: 'Ambient sounds for focus and calm.',
+        description: 'Heartstrings (心弦) - Ambient sounds for focus and calm. Create your ideal atmosphere for relaxation, focus, or creativity.',
+        dir: 'auto',
         display: 'standalone',
         icons: [
           ...[72, 128, 144, 152, 192, 256, 512].map(size => ({
@@ -18,10 +21,11 @@ export default defineConfig({
             type: 'image/png',
           })),
         ],
-        name: 'Moodist',
+        lang: 'en',
+        name: 'Heartstrings 心弦',
         orientation: 'any',
         scope: '/',
-        short_name: 'Moodist',
+        short_name: 'Heartstrings',
         start_url: '/',
         theme_color: '#09090b',
       },
