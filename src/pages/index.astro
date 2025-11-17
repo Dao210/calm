@@ -1,6 +1,5 @@
 ---
 import { initI18n, getT } from '@/lib/i18n-init';
-import Layout from '@/layouts/layout.astro';
 
 import Donate from '@/components/donate.astro';
 import Hero from '@/components/hero.astro';
@@ -11,25 +10,125 @@ import { LanguageSwitcher } from '@/components/language-switcher';
 import { App } from '@/components/app';
 import { count } from '@/lib/sounds';
 
-// Initialize i18n for English
-initI18n('en');
+// Always use English for static builds - client-side script will handle redirects
+// This ensures consistent static HTML generation
+const preferredLocale = 'en';
+
+// Initialize i18n with English for static generation
+initI18n(preferredLocale);
 
 // Get translation functions for each namespace
 const tSeo = getT('seo');
 
-const currentLocale = 'en';
+const currentLocale = preferredLocale;
 ---
 
-<Layout
-  currentLocale={currentLocale}
-  title={tSeo('meta.title', { count: count() })}
->
-  <div style="position: fixed; top: 20px; right: 20px; z-index: 1000;">
-    <LanguageSwitcher client:load currentLocale={currentLocale} />
-  </div>
-  <Donate />
-  <Hero locale={currentLocale} />
-  <App client:load locale={currentLocale} />
-  <About locale={currentLocale} />
-  <Footer locale={currentLocale} />
-</Layout>
+<html lang={currentLocale}>
+  <head>
+    <meta charset="utf-8" />
+    <link href="/favicon.svg" rel="icon" type="image/svg+xml" />
+    <meta content={Astro.generator} name="generator" />
+    <title>{tSeo('meta.title', { count: count() })}</title>
+    <meta content={tSeo('meta.description')} name="description" />
+    <meta content={tSeo('meta.keywords')} name="keywords" />
+    <link href={`https://heartstrings.app/zh/`} hreflang="zh" rel="alternate" />
+    <link href={`https://heartstrings.app/`} hreflang="en" rel="alternate" />
+    <link
+      href={`https://heartstrings.app/`}
+      hreflang="x-default"
+      rel="alternate"
+    />
+    <meta
+      content={tSeo('meta.title', { count: count() })}
+      property="og:title"
+    />
+    <meta content={tSeo('meta.description')} property="og:description" />
+    <meta content="/og-image.jpg" property="og:image" />
+    <meta content="https://heartstrings.app/" property="og:url" />
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta content="index, follow" name="robots" />
+    <link href={`https://heartstrings.app/`} rel="canonical" />
+
+    <script is:inline>
+      // Client-side language detection for static builds - runs immediately
+      (function () {
+        'use strict';
+
+        // Skip if already on a language-specific route
+        const pathname = window.location.pathname;
+        const firstSegment = pathname.split('/')[1];
+        const supportedLocales = [
+          'en',
+          'es',
+          'fr',
+          'de',
+          'it',
+          'ar',
+          'ja',
+          'zh',
+        ];
+
+        if (supportedLocales.includes(firstSegment)) {
+          return; // Already on localized route
+        }
+
+        // Check for stored preference in cookie
+        let storedLocale = null;
+        try {
+          const cookieValue = document.cookie.split('; ').find(function (row) {
+            return row.startsWith('preferredLocale=');
+          });
+          if (cookieValue) {
+            storedLocale = cookieValue.split('=')[1];
+          }
+        } catch (e) {
+          // Cookie access might be restricted in some environments
+        }
+
+        // Determine target locale
+        let targetLocale = null;
+        if (
+          storedLocale &&
+          storedLocale !== 'en' &&
+          supportedLocales.includes(storedLocale)
+        ) {
+          targetLocale = storedLocale;
+        } else {
+          // Detect from browser language
+          var navigator = window.navigator;
+          var browserLang =
+            navigator.language ||
+            (navigator.languages && navigator.languages[0]) ||
+            'en';
+          var detectedLang = browserLang
+            ? browserLang.split('-')[0].toLowerCase()
+            : 'en';
+          if (
+            detectedLang !== 'en' &&
+            supportedLocales.includes(detectedLang)
+          ) {
+            targetLocale = detectedLang;
+          }
+        }
+
+        // Perform redirect if not English
+        if (targetLocale && pathname === '/') {
+          // Use location.replace() instead of location.href for better UX (no back button issues)
+          window.location.replace(
+            '/' + targetLocale + window.location.search + window.location.hash,
+          );
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div style="position: fixed; top: 20px; right: 20px; z-index: 1000;">
+      <LanguageSwitcher client:load currentLocale={currentLocale} />
+    </div>
+    <Donate />
+    <Hero locale={currentLocale} />
+    <App client:load locale={currentLocale} />
+    <About locale={currentLocale} />
+    <Footer locale={currentLocale} />
+  </body>
+</html>
